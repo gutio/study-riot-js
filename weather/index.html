@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+    
+    <my-weather></my-weather>
+    
+    <script src="tags/my-weather.tag" type="riot/tag"></script>
+    <script src="tags/my-weather-condition.tag" type="riot/tag"></script>
+    <script src="https://rawgit.com/riot/riot/master/riot+compiler.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    
+    <script>
+        riot.mount( 'my-weather', {
+            items : [
+                { name : '東京', place : 'tokyo' },
+                { name : '大阪', place : 'osaka' },
+                { name : 'ニューヨーク', place : 'new york' }
+            ]
+        } )
+    </script>
+    
+</body>
+
+</html>
